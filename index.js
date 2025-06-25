@@ -23,8 +23,9 @@ client.on('ready', () => { // quando se conectar, vai aparecer no console.log e 
 })
 
 async function sendMessageTest() { // mensagem inicial
+    const numero = '5511999999999'
     try {
-        await client.sendMessage(`5511952104463@c.us`, mensagemInicial());
+        await client.sendMessage(`${numero}@c.us`, mensagemInicial());
     } catch (err) {
         console.error(err);
     }
